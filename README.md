@@ -1,4 +1,4 @@
-[![Tests](https://github.com/catalin-i/rust-algorithms/actions/workflows/rust.yml/badge.svg)](https://github.com/catalin-i/rust-algorithms/actions/workflows/rust.yml) [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+[![Tests](https://github.com/catalin-i/rust-algorithms/actions/workflows/Tests/badge.svg)](https://github.com/catalin-i/rust-algorithms/actions/workflows/Tests) [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
 # rust-algorithms
 Exercises with data structures and algorithms in Rust
