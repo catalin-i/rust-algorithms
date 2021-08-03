@@ -1,7 +1,9 @@
-pub fn merge_sort(a: &[i32], b: &[i32]) -> Vec<i32> {
+use std::cmp::{PartialEq, PartialOrd};
+
+pub fn merge_sort<T: PartialEq + PartialOrd + Copy>(a: &[T], b: &[T]) -> Vec<T> {
     let mut left_side = a.iter();
     let mut right_side = b.iter();
-    let mut result: Vec<i32> = Vec::new();
+    let mut result: Vec<T> = Vec::new();
 
     let mut finished_left = false;
     let mut finished_right = false;

@@ -27,6 +27,14 @@ mod tests_sort {
         let result = vec![54];
         assert_eq!(merge_sort(&a, &b), result);
     }
+
+    #[test]
+    fn merge_string_arrays() {
+        let a: [&str; 2] = ["apples", "oranges"];
+        let b: [&str; 1] = ["bananas"];
+        let result = vec!["apples", "bananas", "oranges"];
+        assert_eq!(merge_sort(&a, &b), result);
+    }
 }
 #[cfg(test)]
 mod tests_exercises {
