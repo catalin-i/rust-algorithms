@@ -1,6 +1,6 @@
 use std::cmp::{PartialEq, PartialOrd};
 
-pub fn merge_sort<T: PartialEq + PartialOrd + Copy>(a: &[T], b: &[T]) -> Vec<T> {
+pub fn merge_sorted_arrays<T: PartialEq + PartialOrd + Copy>(a: &[T], b: &[T]) -> Vec<T> {
     let mut left_side = a.iter();
     let mut right_side = b.iter();
     let mut result: Vec<T> = Vec::new();
