@@ -1,6 +1,5 @@
 #![allow(dead_code)]
 mod algorithms;
-mod data_structures;
 mod exercises;
 #[cfg(test)]
 mod tests_sort {
@@ -36,7 +35,16 @@ mod tests_sort {
         let result = vec!["apples", "bananas", "oranges"];
         assert_eq!(merge_sorted_arrays(&a, &b), result);
     }
+
+    #[test]
+    fn merge_char_arrays() {
+        let a: [char; 2] = ['a', 'o'];
+        let b: [char; 1] = ['b'];
+        let result = vec!['a', 'b', 'o'];
+        assert_eq!(merge_sorted_arrays(&a, &b), result);
+    }
 }
+
 #[cfg(test)]
 mod tests_exercises {
     use crate::exercises::first_repeating_token::find_repeat;
