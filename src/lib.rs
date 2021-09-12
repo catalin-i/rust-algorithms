@@ -1,6 +1,7 @@
 #![allow(dead_code)]
 mod algorithms;
 mod exercises;
+mod smart_pointer_implementations;
 #[cfg(test)]
 mod tests_sort {
     use crate::algorithms::sorting::merge_sorted_arrays;
