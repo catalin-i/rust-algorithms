@@ -3,6 +3,7 @@
 # rust-algorithms
 Exercises with data structures and algorithms in Rust
 
-Currently, the data structure and algorithm implementations are stored in module folders. All the tests are contained in the \src\lib.rs file separated into a few modules by category.
+Currently, the data structure and algorithm implementations are stored in module folders.
+Implementations for the data structures or algorithms are meant to be didatic - these will not feature optimizations for a production environment or exhaustive test coverage.
 
 In the root dir, run 'cargo build' to compile and 'cargo test' to run all the test packages (also runs the build step).
