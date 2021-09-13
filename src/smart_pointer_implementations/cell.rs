@@ -1,5 +1,5 @@
 use std::cell::UnsafeCell;
-
+#[derive(Debug)]
 pub struct Cell<T> {
     value: UnsafeCell<T>,
 }
