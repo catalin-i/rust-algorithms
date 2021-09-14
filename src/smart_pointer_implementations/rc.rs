@@ -1,4 +1,5 @@
 use crate::smart_pointer_implementations::cell::Cell;
+use std::marker::PhantomData;
 use std::ptr::NonNull;
 pub struct RcShared<T> {
     value: T,
@@ -7,6 +8,7 @@ pub struct RcShared<T> {
 
 pub struct Rc<T> {
     shared: NonNull<RcShared<T>>,
+    _marker: PhantomData<RcShared<T>>,
 }
 
 impl<T> Rc<T> {
@@ -17,6 +19,7 @@ impl<T> Rc<T> {
         });
         Rc {
             shared: unsafe { NonNull::new_unchecked(Box::into_raw(shared)) },
+            _marker: PhantomData,
         }
     }
     pub fn get_count(&self) -> usize {
@@ -31,6 +34,7 @@ impl<T> Clone for Rc<T> {
         shared_ref.count.set(num + 1);
         Rc {
             shared: self.shared,
+            _marker: PhantomData,
         }
     }
 }
